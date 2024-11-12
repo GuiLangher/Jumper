@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form class="formulario">
+            <fieldset class="dadosPessoais">
+                <legend>Dados Pessoais</legend>
+           
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name">
+
+                <label for="address">Endereço: </label>
+                <input type="text" name="address" id="address">
+
+                <label for="city">Cidade: </label>
+                <input type="text" name="city" id="city">
+
+                <label for="state">Estado: </label>
+                <select name="state" id="state" >
+                    <option value="1">Santa Catarina</option>
+                    <option value="2">Rio Grande do Sul</option>
+                    <option value="3">Parana</option>
+                </select>        
+            
+            </fieldset> 
+            <fieldset class="dadosProfissionais">
+                <legend>Dados Profissionais</legend> 
+                    <label for="cargo">Natureza do Cargo:
+
+                    <input type="radio" name="cargo" id="gerencia" value="1">
+                    <label for="gerencia">Gerêcia</label>
+                    <input type="radio" name="cargo" id="financeiro" value="2">
+                    <label for="gerencia">Financeiro</label>  
+                    <input type="radio" name="cargo" id="recepcao" value="3">
+                    <label for="gerencia">Recepção</label>  
+                    <input type="radio" name="cargo" id="admin" value="4">
+                    <label for="gerencia">Administrativo</label>  
+                    <input type="radio" name="cargo" id="juridico" value="5">
+                    <label for="gerencia">Juridico</label> <br>  
+
+                    </label>
+
+                    <label for="Area">Área de Interesse:
+
+                        <input type="checkbox" name="area" id="computacao" value="6">
+                        <label for="computacao">Computação</label>
+                        <input type="checkbox" name="area" id="biologia" value="6">
+                        <label for="computacao">Biologia</label>
+                        <input type="checkbox" name="area" id="ambiente" value="6">
+                        <label for="computacao">Meio Ambiente</label>
+                        <input type="checkbox" name="area" id="engenharia" value="6">
+                        <label for="computacao">Engenharia</label>
+                        <input type="checkbox" name="area" id="historia" value="6">
+                        <label for="computacao">Historia</label> <br>
+
+                    </label>
+
+                    <label for="curriculo">Mini Curriculo:
+
+                        <textarea name="miniCurriculo">
+
+                        </textarea>
+
+                    </label>
+                    
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" name="reset" value="Limpar">
+        </form>
+</body>
+</html>

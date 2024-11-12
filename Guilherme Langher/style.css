@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.dadosPessoais{
+    display: flex;
+    flex-direction: column;
+}

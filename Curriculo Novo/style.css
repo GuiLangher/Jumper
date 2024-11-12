@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000f3;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #183964;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    gap: 20px;
+}
+
+/*Cabeçalho*/
+.cabecalho{
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    font-size: 21px;
+    font-family: var(--fonte-primaria);
+}
+
+.cabecalho_link {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+/*Principal*/
+.foto_perfil{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 7px;
+    margin-left: 60px;
+}
+
+.principal{
+    padding-top: 200px;
+    display: flex;
+    gap: 30px;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__titulo{
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+
+.apresentacao__conteudo__texto{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.apresentacao__links{
+    display: flex;
+    gap: 10px;
+    padding-top: 150px;
+}
+
+.apresentacao__links__link{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 21px;
+}
+
+.apresentacao__conteudo{
+    flex-direction: column;
+    font-size: 18px;
+    width: 90%;
+    padding-top: 30px;
+}
+
+/*Sobre Mim*/
+
+.sobreMim{
+    padding-top: 100px;
+    margin: 20px;
+}
+
+/*Certficados*/
+
+.apresentacao__conteudo__certificados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.apresentacao_conteudo_titulo{
+    font-size: 20px;
+}
+
+.apresentacao_certificados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.apresentacao_imagens{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagem_certificado{
+    width: 25rem;
+    height: 15rem;
+}
+
+/*Rodapé*/
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: var(--fonte-primaria);
+}
