@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+}
+
+main{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.stage{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.obj{
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: red;
+    transition: all 3s;
+}
+
+#obj1:hover{
+    transform: scale(1.9);
+}
+
+#obj2:hover{
+    transform: rotate(180deg);
+}
+
+#obj3:hover{
+    transform: translate(60px);
+}
+
+#obj4:hover{
+    transform: skew(-25deg);
+}
+
+#obj5{
+    transform-origin: left bottom;
+}
+
+#obj5:hover{
+    rotate: -90deg;
+}
+
+#obj6:hover{
+    transform: rotate(-90deg) scale(1.5);
+}
