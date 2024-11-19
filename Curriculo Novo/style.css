@@ -13,6 +13,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,8 +28,13 @@ body {
     height: 100vh;
     gap: 20px;
 }
+/*Remove a barra de rolagem*/
+body::-webkit-scrollbar{
+    display: none;
+}
 
 /*Cabeçalho*/
+
 .cabecalho{
     align-items: center;
     justify-content: center;
@@ -35,6 +45,7 @@ body {
     gap: 25px;
     font-size: 21px;
     font-family: var(--fonte-primaria);
+    position: fixed;
 }
 
 .cabecalho_link {
@@ -42,7 +53,24 @@ body {
     color: var(--cor-secundaria);
 }
 
-/*Principal*/
+.cabecalho a:hover{
+    transform: scale(1.05);
+}
+
+.cabecalho a:active{
+    transform: scale(0.9);
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-primaria);
+}
+
+/* Home */
+
 .foto_perfil{
     width: 20rem;
     height: 20rem;
@@ -50,68 +78,62 @@ body {
     margin-left: 60px;
 }
 
-.principal{
-    padding-top: 200px;
+.home{
     display: flex;
     gap: 30px;
+    padding-top: 70px;
 }
 
-.apresentacao{
-    display: flex;
-    flex-direction: column;
-    font-family: var(--fonte-primaria);
-}
-
-.apresentacao__conteudo__titulo{
+.title{
     padding-bottom: 20px;
     font-size: 35px;
 }
 
-.apresentacao__conteudo__texto{
+.text{
     padding-bottom: 20px;
     font-size: 30px;
 }
 
-.apresentacao__links{
+/* links */
+
+.links{
     display: flex;
     gap: 10px;
-    padding-top: 150px;
+    padding-top: 30px;
+    flex-direction: column;
 }
 
-.apresentacao__links__link{
+.links_presentation{
     text-decoration: none;
     color: var(--cor-secundaria);
     font-size: 21px;
 }
 
-.apresentacao__conteudo{
+.home_content{
     flex-direction: column;
     font-size: 18px;
     width: 90%;
     padding-top: 30px;
 }
 
-/*Sobre Mim*/
+/* Sobre Mim */
 
 .sobreMim{
     padding-top: 100px;
     margin: 20px;
 }
 
-/*Certficados*/
+/* Certficados */
 
-.apresentacao__conteudo__certificados{
+.certificates_content{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-top: 50px;
 }
 
-.apresentacao_conteudo_titulo{
-    font-size: 20px;
-}
-
-.apresentacao_certificados{
+.certificates{
     display: flex;
     flex-direction: column;
     align-items: center;
